@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 안내 / Privacy Policies</title>
+    <style>
+        :root {
+            --primary-color: #1976D2;
+            --primary-hover: #1565C0;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --muted-text: #666666;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 40px 16px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 36px 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 6px;
+        }
+        .desc {
+            color: var(--muted-text);
+            font-size: 0.95rem;
+        }
+        .app-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .app-card {
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            background: #ffffff;
+        }
+        .app-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #90caf9;
+        }
+        .app-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .app-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #222;
+        }
+        .badge {
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            background: #e3f2fd;
+            color: #1565c0;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        .app-desc {
+            font-size: 0.9rem;
+            color: var(--muted-text);
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: var(--primary-hover);
+        }
+        footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.82rem;
+            color: var(--muted-text);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policies</h1>
+            <p class="desc">noh_seongchang 배포 애플리케이션의 개인정보처리방침 안내 페이지입니다.</p>
+        </header>
+
+        <div class="app-list">
+            <!-- Fake GPS -->
+            <div class="app-card">
+                <div class="app-header">
+                    <div class="app-title">Fake GPS (모의 GPS 위치)</div>
+                    <span class="badge">Android</span>
+                </div>
+                <p class="app-desc">가상 GPS 위치 시뮬레이션 및 지도 테스트 애플리케이션 (Package: com.nsc.fakegps)</p>
+                <a href="fake-gps/" class="btn">개인정보처리방침 (Privacy Policy) 보기 &rarr;</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 noh_seongchang (nsc159@naver.com). All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

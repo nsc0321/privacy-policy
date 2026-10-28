@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 / Privacy Policy - Fake GPS</title>
+    <style>
+        :root {
+            --primary-color: #1976D2;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --muted-text: #666666;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 36px 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+        h1 {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted-text);
+        }
+        .lang-switch {
+            margin-top: 14px;
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            color: #1565c0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .lang-btn:hover {
+            background: #bbdefb;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: #111;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+        h3 {
+            font-size: 1.05rem;
+            margin: 16px 0 8px;
+            color: #222;
+        }
+        p {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            word-break: keep-all;
+        }
+        ul {
+            margin: 8px 0 16px 24px;
+            font-size: 0.95rem;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        .highlight-box {
+            background-color: #f1f8ff;
+            border: 1px solid #c8e1ff;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            font-size: 0.92rem;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            text-align: center;
+        }
+        .divider {
+            margin: 48px 0;
+            border: 0;
+            height: 2px;
+            background: #eceff1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Korean Section -->
+        <section id="ko">
+            <header>
+                <h1>개인정보처리방침</h1>
+                <p class="meta"><strong>앱 이름:</strong> Fake GPS (모의 GPS 위치)<br>
+                <strong>패키지명:</strong> com.nsc.fakegps<br>
+                <strong>최종 수정일:</strong> 2026년 10월 28일</p>
+                <div class="lang-switch">
+                    <a href="#en" class="lang-btn">English Policy (EN)</a>
+                </div>
+            </header>
+
+            <div class="highlight-box">
+                본 앱(Fake GPS)은 이용자의 개인정보를 소중히 다루며, 관련 법령 및 구글 플레이 정책을 준수합니다. 본 앱은 사용자의 위치 정보나 개인식별정보를 개발자의 외부 서버로 수집·전송·저장하지 않습니다.
+            </div>
+
+            <h2>1. 수집 및 처리하는 정보와 목적</h2>
+            <p>본 앱은 서비스 제공을 위해 다음 정보를 기기 내부에서만 처리합니다.</p>
+            <ul>
+                <li><strong>기기 위치 정보 (정밀 위치 / 대략적 위치):</strong> 사용자가 '내 위치' 버튼을 누르거나 지도에서 현재 위치를 확인하고자 할 때 기기 내에서만 일시적으로 참조됩니다. 외부 서버로 전송되지 않습니다.</li>
+                <li><strong>모의 위치 설정 (Mock Location):</strong> 사용자가 지정한 가상의 위도/경도 좌표를 안드로이드 시스템의 위치 공급자(Mock Provider)에 주입하기 위해서만 사용됩니다.</li>
+                <li><strong>즐겨찾기 및 검색 기록:</strong> 사용자가 저장한 장소는 기기 내부 저장소(SharedPreferences)에만 저장되며 외부로 유출되지 않습니다.</li>
+            </ul>
+
+            <h2>2. 앱 권한 사용 안내</h2>
+            <ul>
+                <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION:</strong> 지도 상에서 사용자의 현재 위치를 확인하기 위해 사용됩니다.</li>
+                <li><strong>ACCESS_MOCK_LOCATION:</strong> 가상 위치 시뮬레이션 기능을 제공하기 위해 사용됩니다.</li>
+                <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_LOCATION:</strong> 모의 위치 서비스가 백그라운드에서도 중단 없이 안정적으로 동작하도록 상태바 알림과 함께 실행됩니다.</li>
+                <li><strong>POST_NOTIFICATIONS:</strong> 서비스 실행 중 상태 및 정지 버튼을 제공하기 위한 알림 표시에 사용됩니다.</li>
+                <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> OpenStreetMap 지도 타일 다운로드 및 광고 송출을 위해 사용됩니다.</li>
+            </ul>
+
+            <h2>3. 제3자 서비스 및 광고</h2>
+            <p>본 앱은 무료 서비스 제공 및 유지 관리를 위해 아래의 외부 SDK를 포함하고 있습니다. 해당 서비스는 각 사의 개인정보처리방침에 따라 광고 ID 등을 자동으로 수집할 수 있습니다.</p>
+            <ul>
+                <li><strong>Google AdMob (Google LLC):</strong>
+                    광고 표시 및 광고 효과 분석을 위해 광고 식별자(Advertising ID) 등이 활용될 수 있습니다.<br>
+                    - <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google 광고 개인정보처리방침</a>
+                </li>
+                <li><strong>OpenStreetMap:</strong>
+                    지도 타일 로드를 위해 OpenStreetMap 서버와 통신합니다.<br>
+                    - <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">OpenStreetMap 개인정보처리방침</a>
+                </li>
+            </ul>
+
+            <h2>4. 개인정보의 보관 및 파기</h2>
+            <p>본 앱은 자체 서버를 운영하지 않으므로 사용자의 어떠한 개인정보도 서버에 저장하지 않습니다. 기기 내에 저장된 검색 기록이나 설정 데이터는 앱 삭제(제거) 또는 '앱 데이터 삭제'를 통해 언제든지 즉시 삭제할 수 있습니다.</p>
+
+            <h2>5. 아동의 개인정보 보호</h2>
+            <p>본 앱은 만 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+            <h2>6. 개인정보처리방침의 변경</h2>
+            <p>법률, 정책 또는 앱 기능 변경에 따라 본 개인정보처리방침이 수정될 수 있으며, 수정 시 본 페이지를 통해 공지합니다.</p>
+
+            <h2>7. 문의처</h2>
+            <p>개인정보 처리 및 앱 관련 문의사항이 있으시면 아래 연락처로 문의해 주시기 바랍니다.</p>
+            <ul>
+                <li><strong>개발자/관리자:</strong> noh_seongchang</li>
+                <li><strong>이메일:</strong> <a href="mailto:nsc159@naver.com">nsc159@naver.com</a></li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <!-- English Section -->
+        <section id="en">
+            <header>
+                <h1>Privacy Policy</h1>
+                <p class="meta"><strong>App Name:</strong> Fake GPS<br>
+                <strong>Package Name:</strong> com.nsc.fakegps<br>
+                <strong>Last Updated:</strong> October 28, 2026</p>
+                <div class="lang-switch">
+                    <a href="#ko" class="lang-btn">한국어 방침 (KO)</a>
+                </div>
+            </header>
+
+            <div class="highlight-box">
+                This Privacy Policy describes how Fake GPS ("the App") handles your information. The App does NOT collect, store, or transmit your personal identifiable information (PII) or real-time location data to any external developer server.
+            </div>
+
+            <h2>1. Information Processed and Purpose</h2>
+            <ul>
+                <li><strong>Location Data (Precise and Coarse Location):</strong> Used strictly on your device to display your current location on the map when you tap the "My Location" button. We do NOT transmit or sell your location data to any third parties or external servers.</li>
+                <li><strong>Mock Location:</strong> Used solely to inject user-specified virtual GPS coordinates into the Android system mock location provider.</li>
+                <li><strong>Saved Favorites & History:</strong> Saved strictly on your local device storage (SharedPreferences) for your convenience.</li>
+            </ul>
+
+            <h2>2. Permissions Used</h2>
+            <ul>
+                <li><strong>ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION:</strong> Used to display the user's real location on the map.</li>
+                <li><strong>ACCESS_MOCK_LOCATION:</strong> Used to simulate mock location coordinates as requested by the user.</li>
+                <li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_LOCATION:</strong> Used to keep the mock location service running reliably in the background with an ongoing notification.</li>
+                <li><strong>POST_NOTIFICATIONS:</strong> Used to show the ongoing service status notification with quick controls.</li>
+                <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Used to download OpenStreetMap map tiles and display advertisements via Google AdMob.</li>
+            </ul>
+
+            <h2>3. Third-Party Services and Advertising</h2>
+            <p>The App integrates third-party services that may collect information used to identify your device:</p>
+            <ul>
+                <li><strong>Google AdMob (Google LLC):</strong>
+                    Used to serve advertisements. AdMob may collect and process device identifiers (such as Google Advertising ID), IP address, and interaction data according to Google's privacy policy.<br>
+                    - <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Ads & Privacy Policy</a>
+                </li>
+                <li><strong>OpenStreetMap:</strong>
+                    Used to fetch map tiles.<br>
+                    - <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">OpenStreetMap Privacy Policy</a>
+                </li>
+            </ul>
+
+            <h2>4. Data Retention and Deletion</h2>
+            <p>We do not operate any external database servers. All user preferences and favorites are stored locally on your device. You can erase all data at any time by clearing the App's data in Android Settings or by uninstalling the App.</p>
+
+            <h2>5. Children's Privacy</h2>
+            <p>The App is not directed to individuals under the age of 13. We do not knowingly collect personal information from children.</p>
+
+            <h2>6. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+            <ul>
+                <li><strong>Developer:</strong> noh_seongchang</li>
+                <li><strong>Email:</strong> <a href="mailto:nsc159@naver.com">nsc159@naver.com</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2026 noh_seongchang. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
